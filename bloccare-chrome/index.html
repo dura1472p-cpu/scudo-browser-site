@@ -5,146 +5,430 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Come bloccare Chrome con password | Scudo Browser</title>
-  <meta name="description" content="Scopri come proteggere l'accesso alla sessione di Google Chrome con una password usando Scudo Browser, estensione gratuita per Chrome.">
+  <meta name="description" content="Come bloccare Chrome con password e proteggere l'accesso alla sessione del browser con Scudo Browser.">
 
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #07152b;
-      color: white;
-      line-height: 1.6;
-      margin: 0;
-      padding: 30px;
+    * {
+      box-sizing: border-box;
     }
 
-    main {
-      max-width: 850px;
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #07152b;
+      color: #ffffff;
+      line-height: 1.6;
     }
 
     a {
       color: #8fc2ff;
     }
 
-    .button {
-      display: inline-block;
-      background: #ffffff;
-      color: #07152b;
-      padding: 12px 20px;
-      margin: 10px 0;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 6px;
+    .container {
+      width: min(1000px, calc(100% - 40px));
+      margin: 0 auto;
     }
 
-    h1, h2 {
-      line-height: 1.25;
+    .hero {
+      text-align: center;
+      padding: 65px 0 45px;
+    }
+
+    .shield {
+      font-size: 45px;
+      margin-bottom: 8px;
+    }
+
+    h1 {
+      font-size: 38px;
+      line-height: 1.2;
+      margin: 0 0 18px;
+    }
+
+    .subtitle {
+      max-width: 760px;
+      margin: 0 auto;
+      color: #d8e4f5;
+      font-size: 18px;
+    }
+
+    section {
+      padding: 25px 0;
+    }
+
+    h2 {
+      color: #66b2ff;
+      font-size: 25px;
+      margin-top: 0;
+    }
+
+    .box {
+      background: #102747;
+      border: 1px solid #203d61;
+      border-radius: 10px;
+      padding: 25px;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .step {
+      background: #102747;
+      border: 1px solid #203d61;
+      border-radius: 10px;
+      padding: 22px;
+    }
+
+    .number {
+      display: inline-block;
+      background: #1687ff;
+      width: 32px;
+      height: 32px;
+      line-height: 32px;
+      text-align: center;
+      border-radius: 50%;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .step h3 {
+      margin: 5px 0 8px;
+    }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    details {
+      background: #102747;
+      border: 1px solid #203d61;
+      border-radius: 9px;
+      padding: 16px 18px;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    details p {
+      margin-bottom: 0;
+    }
+
+    .related {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .related-card {
+      background: #0b1d37;
+      border: 1px solid #203d61;
+      border-radius: 10px;
+      padding: 22px;
+    }
+
+    .related-card h3 {
+      margin-top: 0;
+    }
+
+    .button {
+      display: inline-block;
+      background: #1687ff;
+      color: #ffffff;
+      padding: 13px 22px;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .cta {
+      text-align: center;
+      padding: 45px 0 60px;
+    }
+
+    .cta p {
+      margin-bottom: 20px;
+    }
+
+    footer {
+      border-top: 1px solid #203d61;
+      text-align: center;
+      padding: 25px 20px;
+      color: #aebed3;
+      font-size: 14px;
+    }
+
+    footer p {
+      margin: 6px 0;
+    }
+
+    @media (max-width: 850px) {
+      .steps {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 650px) {
+      .steps,
+      .faq-grid,
+      .related {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 31px;
+      }
+
+      .hero {
+        padding: 45px 0 30px;
+      }
     }
   </style>
 </head>
 
 <body>
 
+<header class="hero">
+  <div class="container">
+
+    <div class="shield">🛡️</div>
+
+    <h1>Come bloccare Chrome con password</h1>
+
+    <p class="subtitle">
+      Scudo Browser permette di aggiungere una protezione tramite password
+      alla sessione di Google Chrome e di bloccarla nuovamente quando necessario.
+    </p>
+
+  </div>
+</header>
+
 <main>
 
-<h1>Come bloccare Chrome con password</h1>
+<section>
+  <div class="container">
 
-<p>
-Google Chrome non dispone di una funzione integrata che permetta di
-proteggere l'apertura della propria sessione del browser con una password
-dedicata.
-</p>
+    <div class="box">
 
-<p>
-Se utilizzi un computer condiviso o vuoi impedire che altre persone
-accedano immediatamente alle schede e alla sessione di Chrome,
-puoi utilizzare <strong>Scudo Browser</strong>.
-</p>
+      <h2>Proteggere l'accesso a Chrome</h2>
 
-<h2>Proteggere l'accesso a Chrome</h2>
+      <p>
+        Google Chrome non dispone di una funzione integrata specifica per
+        bloccare l'apertura della sessione del browser con una password separata.
+        Scudo Browser aggiunge questa protezione attraverso un'estensione.
+      </p>
 
-<p>
-Scudo Browser è un'estensione gratuita per Google Chrome che aggiunge
-una richiesta di password all'accesso alla sessione del browser.
-La password viene configurata direttamente dall'utente.
-</p>
+      <p>
+        Quando Chrome viene chiuso completamente e successivamente riaperto,
+        Scudo Browser richiede nuovamente la password prima di consentire
+        l'accesso alla sessione protetta.
+      </p>
 
-<p>
-Quando Chrome viene chiuso completamente e successivamente riaperto,
-Scudo Browser richiede nuovamente la password prima di consentire
-l'accesso alla sessione protetta.
-</p>
+    </div>
 
-<h2>Come funziona</h2>
+  </div>
+</section>
 
-<ol>
-  <li>Installa Scudo Browser dal Chrome Web Store.</li>
-  <li>Configura la password nelle impostazioni dell'estensione.</li>
-  <li>Chiudi completamente Chrome.</li>
-  <li>Alla successiva apertura inserisci la password per accedere alla sessione.</li>
-</ol>
+<section>
+  <div class="container">
 
-<p>
-Durante la stessa sessione, dopo lo sblocco, puoi continuare a utilizzare
-normalmente Chrome e aprire nuove schede e finestre.
-</p>
+    <h2>Come funziona</h2>
 
-<h2>Bloccare Chrome immediatamente</h2>
+    <div class="steps">
 
-<p>
-Scudo Browser include anche la funzione <strong>“Blocca adesso”</strong>.
-Puoi utilizzarla quando vuoi lasciare temporaneamente il computer e
-desideri proteggere subito la sessione del browser.
-</p>
+      <div class="step">
+        <span class="number">1</span>
+        <h3>Installa l'estensione</h3>
+        <p>
+          Installa gratuitamente Scudo Browser dal Chrome Web Store.
+        </p>
+      </div>
 
-<h2>Quando può essere utile</h2>
+      <div class="step">
+        <span class="number">2</span>
+        <h3>Configura la password</h3>
+        <p>
+          Imposta la password che utilizzerai per accedere alla sessione protetta.
+        </p>
+      </div>
 
-<p>
-La protezione può essere utile su computer condivisi, PC familiari,
-postazioni di lavoro o in tutte le situazioni in cui desideri aggiungere
-un livello di privacy all'accesso alla tua sessione Chrome.
-</p>
+      <div class="step">
+        <span class="number">3</span>
+        <h3>Riavvia Chrome</h3>
+        <p>
+          Chiudi completamente Chrome e riaprilo per iniziare una nuova sessione.
+        </p>
+      </div>
 
-<h2>Chrome ha una password integrata?</h2>
+      <div class="step">
+        <span class="number">4</span>
+        <h3>Sblocca la sessione</h3>
+        <p>
+          Inserisci la password configurata per accedere alla sessione protetta.
+        </p>
+      </div>
 
-<p>
-No. Google Chrome non offre una password separata specificamente
-destinata a bloccare l'apertura del browser. Scudo Browser aggiunge
-questa protezione tramite un'estensione.
-</p>
+    </div>
 
-<h2>La password viene richiesta per ogni nuova scheda?</h2>
+  </div>
+</section>
 
-<p>
-No. Dopo aver sbloccato correttamente la sessione, puoi aprire nuove
-schede e finestre senza reinserire continuamente la password.
-La protezione torna attiva quando viene avviata una nuova sessione
-di Chrome oppure quando utilizzi “Blocca adesso”.
-</p>
+<section>
+  <div class="container">
 
-<h2>Scudo Browser è gratuito?</h2>
+    <div class="box">
 
-<p>
-Sì. Scudo Browser è gratuito. Il progetto può essere sostenuto
-facoltativamente tramite una donazione, senza sbloccare funzionalità
-aggiuntive.
-</p>
+      <h2>Bloccare Chrome immediatamente</h2>
 
-<h2>Installa Scudo Browser</h2>
+      <p>
+        Scudo Browser include anche la funzione
+        <strong>“Blocca adesso”</strong>, che permette di attivare
+        immediatamente la schermata di protezione senza dover prima
+        chiudere Chrome.
+      </p>
 
-<p>
-Puoi installare gratuitamente Scudo Browser dal Chrome Web Store.
-</p>
+      <p>
+        Può essere utile quando vuoi lasciare temporaneamente il computer
+        e desideri proteggere subito l'accesso alla sessione del browser.
+      </p>
 
-<a class="button"
-   href="https://chromewebstore.google.com/detail/fmoccjbdmhiimbebicdedimjepbjfnpf">
-   Apri Scudo Browser nel Chrome Web Store
-</a>
+    </div>
 
-<p>
-<a href="../">Torna alla pagina principale di Scudo Browser</a>
-</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+
+    <h2>Domande frequenti</h2>
+
+    <div class="faq-grid">
+
+      <details>
+        <summary>Chrome ha una password integrata?</summary>
+        <p>
+          No. Chrome non offre una password separata specificamente
+          destinata a bloccare l'apertura della sessione del browser.
+          Scudo Browser aggiunge questa protezione tramite un'estensione.
+        </p>
+      </details>
+
+      <details>
+        <summary>La password viene richiesta per ogni nuova scheda?</summary>
+        <p>
+          No. Dopo aver sbloccato correttamente la sessione puoi aprire
+          nuove schede e finestre senza reinserire continuamente la password.
+        </p>
+      </details>
+
+      <details>
+        <summary>Cosa succede quando chiudo completamente Chrome?</summary>
+        <p>
+          Quando Chrome viene chiuso completamente e successivamente riaperto,
+          Scudo Browser torna a proteggere l'accesso alla nuova sessione
+          e richiede nuovamente la password.
+        </p>
+      </details>
+
+      <details>
+        <summary>Posso bloccare Chrome senza chiuderlo?</summary>
+        <p>
+          Sì. Puoi utilizzare la funzione “Blocca adesso” per attivare
+          immediatamente la schermata di protezione.
+        </p>
+      </details>
+
+      <details>
+        <summary>Scudo Browser è gratuito?</summary>
+        <p>
+          Sì. Scudo Browser è gratuito. Il progetto può essere sostenuto
+          facoltativamente tramite una donazione, senza sbloccare
+          funzionalità aggiuntive.
+        </p>
+      </details>
+
+      <details>
+        <summary>Scudo Browser protegge tutto il computer?</summary>
+        <p>
+          No. Scudo Browser protegge l'accesso alla sessione Chrome tramite
+          l'estensione e non sostituisce le protezioni del sistema operativo.
+        </p>
+      </details>
+
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="container">
+
+    <h2>Approfondisci</h2>
+
+    <div class="related">
+
+      <div class="related-card">
+        <h3>Come mettere una password a Chrome</h3>
+        <p>
+          Leggi la guida dedicata alla configurazione e all'utilizzo
+          della password per la sessione Chrome.
+        </p>
+        <a href="../password-chrome/">Leggi la guida →</a>
+      </div>
+
+      <div class="related-card">
+        <h3>FAQ Scudo Browser</h3>
+        <p>
+          Consulta le risposte alle domande più frequenti sul funzionamento
+          di Scudo Browser.
+        </p>
+        <a href="../faq/">Apri le FAQ →</a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container">
+
+    <h2>Installa Scudo Browser</h2>
+
+    <p>
+      Puoi installare gratuitamente Scudo Browser dal Chrome Web Store.
+    </p>
+
+    <a class="button"
+       href="https://chromewebstore.google.com/detail/fmoccjbdmhiimbebicdedimjepbjfnpf">
+      Apri Scudo Browser nel Chrome Web Store
+    </a>
+
+  </div>
+</section>
 
 </main>
+
+<footer>
+
+  <p>
+    <a href="../">← Torna alla pagina principale di Scudo Browser</a>
+  </p>
+
+  <p>
+    <a href="https://dura1472p-cpu.github.io/scudo-browser/ScudoBrowser-Privacy-Policy.html">
+      Privacy Policy
+    </a>
+  </p>
+
+</footer>
 
 </body>
 </html>
