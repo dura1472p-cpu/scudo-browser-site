@@ -1,203 +1,363 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Scudo Browser | Proteggi Chrome con una password</title>
+  <title>Scudo Browser | Proteggi Chrome con una password</title>
+  <meta name="description" content="Scudo Browser è un'estensione gratuita per Chrome che protegge l'accesso alla sessione del browser tramite una password locale.">
 
-<meta name="description" content="Scudo Browser è un'estensione gratuita per Chrome che protegge l'accesso alla sessione del browser tramite una password locale.">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-<link rel="canonical" href="https://dura1472p-cpu.github.io/scudo-browser-site/">
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #07152b;
+      color: #ffffff;
+      line-height: 1.6;
+    }
 
-<style>
-*{box-sizing:border-box}
-body{
-  margin:0;
-  font-family:Arial,sans-serif;
-  background:#07152b;
-  color:#fff;
-  line-height:1.6;
-}
-header{
-  text-align:center;
-  padding:80px 20px 60px;
-  background:linear-gradient(180deg,#0c2d5c,#07152b);
-}
-.logo{font-size:70px;margin-bottom:10px}
-h1{font-size:44px;margin:0 0 15px}
-.subtitle{
-  font-size:21px;
-  max-width:750px;
-  margin:0 auto 30px;
-  color:#dbe8ff;
-}
-.button{
-  display:inline-block;
-  background:#1684ff;
-  color:#fff;
-  padding:15px 25px;
-  border-radius:9px;
-  text-decoration:none;
-  font-weight:bold;
-  font-size:18px;
-}
-main{
-  max-width:950px;
-  margin:auto;
-  padding:45px 20px;
-}
-section{margin-bottom:55px}
-h2{font-size:29px;color:#75b8ff}
-.cards{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-  gap:18px;
-}
-.card{
-  background:#102544;
-  padding:22px;
-  border-radius:12px;
-}
-.card h3{margin-top:0}
-a{color:#75b8ff}
-footer{
-  text-align:center;
-  border-top:1px solid #274363;
-  padding:30px 20px;
-  color:#aebed3;
-}
-</style>
+    a {
+      color: #8fc2ff;
+    }
+
+    .container {
+      width: min(1100px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 70px 0 60px;
+    }
+
+    .shield {
+      font-size: 52px;
+      margin-bottom: 8px;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin: 0 0 12px;
+    }
+
+    .subtitle {
+      max-width: 680px;
+      margin: 0 auto 25px;
+      font-size: 18px;
+      color: #d8e4f5;
+    }
+
+    .button {
+      display: inline-block;
+      background: #1687ff;
+      color: white;
+      padding: 13px 22px;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 35px 0;
+    }
+
+    h2 {
+      color: #66b2ff;
+      font-size: 27px;
+      margin-top: 0;
+    }
+
+    .intro-text {
+      max-width: 850px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 22px;
+    }
+
+    .card {
+      background: #102747;
+      border: 1px solid #203d61;
+      border-radius: 10px;
+      padding: 22px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      margin-bottom: 0;
+    }
+
+    .guides {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .guides .card {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .guides .card a {
+      margin-top: auto;
+      padding-top: 12px;
+    }
+
+    .useful {
+      background: #0b1d37;
+      border: 1px solid #203d61;
+      border-radius: 10px;
+      padding: 25px;
+    }
+
+    .final-cta {
+      text-align: center;
+      padding: 50px 0 65px;
+    }
+
+    .final-cta p {
+      margin-bottom: 20px;
+    }
+
+    footer {
+      border-top: 1px solid #203d61;
+      text-align: center;
+      padding: 25px 20px;
+      color: #aebed3;
+      font-size: 14px;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+
+    @media (max-width: 850px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .guides {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 34px;
+      }
+    }
+
+    @media (max-width: 550px) {
+      .container {
+        width: min(100% - 28px, 1100px);
+      }
+
+      .hero {
+        padding: 45px 0 35px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      h2 {
+        font-size: 24px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-  <div class="logo">🛡️</div>
-  <h1>Scudo Browser</h1>
-  <p class="subtitle">
-    Proteggi l'accesso alla tua sessione di Google Chrome con una password locale.
-    Semplice, gratuito e senza account.
-  </p>
+<header class="hero">
+  <div class="container">
 
-  <a class="button"
-     href="https://chromewebstore.google.com/detail/fmoccjbdmhiimbebicdedimjepbjfnpf">
-     Installa dal Chrome Web Store
-  </a>
+    <div class="shield">🛡️</div>
+
+    <h1>Scudo Browser</h1>
+
+    <p class="subtitle">
+      Proteggi l'accesso alla tua sessione di Google Chrome con una
+      password locale. Semplice, gratuito e senza account.
+    </p>
+
+    <a class="button"
+       href="https://chromewebstore.google.com/detail/fmoccjbdmhiimbebicdedimjepbjfnpf">
+      Installa dal Chrome Web Store
+    </a>
+
+  </div>
 </header>
 
 <main>
 
 <section>
-<h2>Protezione tramite password per Chrome</h2>
+  <div class="container">
 
-<p>
-Scudo Browser è un'estensione per Google Chrome progettata per richiedere
-una password all'avvio di una nuova sessione del browser.
-Dopo lo sblocco puoi continuare a utilizzare schede e finestre durante
-la stessa sessione senza reinserire continuamente la password.
-</p>
+    <h2>Protezione tramite password per Chrome</h2>
 
-<p>
-La configurazione della password viene memorizzata localmente nel browser
-e non è necessario creare un account.
-</p>
+    <div class="intro-text">
+      <p>
+        Scudo Browser è un'estensione per Google Chrome progettata per
+        richiedere una password all'avvio di una nuova sessione del browser.
+        Dopo lo sblocco puoi continuare a utilizzare schede e finestre durante
+        la stessa sessione senza reinserire continuamente la password.
+      </p>
+
+      <p>
+        La configurazione della password viene memorizzata localmente e
+        non è necessario creare un account.
+      </p>
+    </div>
+
+  </div>
 </section>
 
 <section>
-<h2>Funzioni principali</h2>
+  <div class="container">
 
-<div class="cards">
+    <h2>Funzioni principali</h2>
 
-<div class="card">
-<h3>🔐 Protezione con password</h3>
-<p>Richiede la password configurata quando inizia una nuova sessione protetta.</p>
-</div>
+    <div class="grid">
 
-<div class="card">
-<h3>🔒 Blocco manuale</h3>
-<p>Puoi bloccare nuovamente la sessione quando desideri tramite la funzione dedicata.</p>
-</div>
+      <div class="card">
+        <h3>🔐 Protezione con password</h3>
+        <p>
+          Richiede la password configurata quando inizia una nuova
+          sessione protetta.
+        </p>
+      </div>
 
-<div class="card">
-<h3>💻 Configurazione locale</h3>
-<p>Le impostazioni della protezione vengono conservate localmente.</p>
-</div>
+      <div class="card">
+        <h3>🔒 Blocco manuale</h3>
+        <p>
+          Puoi bloccare nuovamente la sessione quando desideri tramite
+          la funzione “Blocca adesso”.
+        </p>
+      </div>
 
-<div class="card">
-<h3>🆓 Gratuito</h3>
-<p>Scudo Browser è gratuito. Non è necessario alcun abbonamento.</p>
-</div>
+      <div class="card">
+        <h3>💻 Configurazione locale</h3>
+        <p>
+          Le impostazioni della protezione vengono conservate localmente.
+        </p>
+      </div>
 
-</div>
+      <div class="card">
+        <h3>🆓 Gratuito</h3>
+        <p>
+          Scudo Browser è gratuito e non richiede alcun abbonamento.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
 </section>
 
 <section>
-<h2>Guide su Scudo Browser</h2>
+  <div class="container">
 
-<div class="cards">
+    <h2>Guide su Scudo Browser</h2>
 
-<div class="card">
-<h3>Come mettere una password a Chrome</h3>
-<p>Scopri come aggiungere una protezione tramite password alla sessione Chrome.</p>
-<a href="password-chrome/">Leggi la guida →</a>
-</div>
+    <div class="grid guides">
 
-<div class="card">
-<h3>Come bloccare Chrome</h3>
-<p>Una guida per chi desidera limitare l'accesso alla propria sessione del browser.</p>
-<a href="bloccare-chrome/">Leggi la guida →</a>
-</div>
+      <div class="card">
+        <h3>Come mettere una password a Chrome</h3>
+        <p>
+          Scopri come aggiungere una protezione tramite password alla
+          sessione Chrome.
+        </p>
+        <a href="password-chrome/">Leggi la guida →</a>
+      </div>
 
-<div class="card">
-<h3>Domande frequenti</h3>
-<p>Informazioni sul funzionamento e sulle caratteristiche di Scudo Browser.</p>
-<a href="faq/">Apri le FAQ →</a>
-</div>
+      <div class="card">
+        <h3>Come bloccare Chrome con password</h3>
+        <p>
+          Una guida per chi desidera limitare l'accesso alla propria
+          sessione del browser.
+        </p>
+        <a href="bloccare-chrome/">Leggi la guida →</a>
+      </div>
 
-</div>
+      <div class="card">
+        <h3>Domande frequenti</h3>
+        <p>
+          Informazioni sul funzionamento e sulle caratteristiche di
+          Scudo Browser.
+        </p>
+        <a href="faq/">Apri le FAQ →</a>
+      </div>
+
+    </div>
+
+  </div>
 </section>
 
 <section>
-<h2>Quando può essere utile?</h2>
+  <div class="container">
 
-<p>
-Scudo Browser può essere utile su computer condivisi, PC familiari
-o postazioni nelle quali si desidera aggiungere una barriera di accesso
-alla sessione Chrome.
-</p>
+    <div class="useful">
 
-<p>
-Scudo Browser è un'estensione di Chrome e non sostituisce la protezione
-dell'account Windows, macOS o del sistema operativo.
-</p>
+      <h2>Quando può essere utile?</h2>
+
+      <p>
+        Scudo Browser può essere utile su computer condivisi, PC familiari
+        o postazioni nelle quali si desidera aggiungere una barriera di
+        accesso alla sessione Chrome.
+      </p>
+
+      <p>
+        Scudo Browser è un'estensione di Chrome e non sostituisce la
+        protezione dell'account Windows, macOS o del sistema operativo.
+      </p>
+
+    </div>
+
+  </div>
 </section>
 
-<section>
-<h2>Installa Scudo Browser</h2>
+<section class="final-cta">
+  <div class="container">
 
-<p>
-Puoi installare gratuitamente Scudo Browser dal Chrome Web Store.
-</p>
+    <h2>Installa Scudo Browser</h2>
 
-<a class="button"
-   href="https://chromewebstore.google.com/detail/fmoccjbdmhiimbebicdedimjepbjfnpf">
-   Vai al Chrome Web Store
-</a>
+    <p>
+      Puoi installare gratuitamente Scudo Browser dal Chrome Web Store.
+    </p>
 
+    <a class="button"
+       href="https://chromewebstore.google.com/detail/fmoccjbdmhiimbebicdedimjepbjfnpf">
+      Vai al Chrome Web Store
+    </a>
+
+  </div>
 </section>
 
 </main>
 
 <footer>
-<p>Scudo Browser — Protezione accesso al browser</p>
 
-<p>
-<a href="https://dura1472p-cpu.github.io/scudo-browser/ScudoBrowser-Privacy-Policy.html">
-Privacy Policy
-</a>
-</p>
+  <p>Scudo Browser — Protezione accesso al browser</p>
+
+  <p>
+    <a href="https://dura1472p-cpu.github.io/scudo-browser/ScudoBrowser-Privacy-Policy.html">
+      Privacy Policy
+    </a>
+  </p>
+
 </footer>
 
 </body>
-</html> 
+</html>
