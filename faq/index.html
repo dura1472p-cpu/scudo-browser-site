@@ -19,25 +19,56 @@
 
     main {
       max-width: 850px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin-bottom: 8px;
+    }
+
+    .intro {
+      color: #d8e4f5;
+      margin-bottom: 30px;
+    }
+
+    details {
+      background: #0d203d;
+      border: 1px solid #28415f;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      padding: 0 18px;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 17px;
+      padding: 16px 0;
+    }
+
+    details p {
+      margin-top: 0;
+      padding-bottom: 12px;
     }
 
     a {
       color: #8fc2ff;
     }
 
+    .install {
+      margin-top: 30px;
+      padding-top: 10px;
+    }
+
     .button {
       display: inline-block;
-      background: #ffffff;
+      background: white;
       color: #07152b;
       padding: 12px 20px;
-      margin: 10px 0;
+      margin: 8px 0 20px;
       text-decoration: none;
       font-weight: bold;
       border-radius: 6px;
-    }
-
-    h1, h2 {
-      line-height: 1.25;
     }
   </style>
 </head>
@@ -48,120 +79,130 @@
 
 <h1>FAQ Scudo Browser</h1>
 
-<p>
-Qui trovi le risposte alle domande più comuni su Scudo Browser,
-sulla protezione tramite password e sul funzionamento dell'estensione
-con Google Chrome.
+<p class="intro">
+Risposte alle domande più comuni su Scudo Browser, sulla protezione
+tramite password e sul funzionamento dell'estensione con Google Chrome.
+Clicca su una domanda per visualizzare la risposta.
 </p>
 
-<h2>Che cos'è Scudo Browser?</h2>
+<details>
+  <summary>Che cos'è Scudo Browser?</summary>
+  <p>
+    Scudo Browser è un'estensione per Google Chrome che permette di
+    proteggere l'accesso alla sessione del browser tramite una password
+    configurata dall'utente.
+  </p>
+</details>
 
-<p>
-Scudo Browser è un'estensione per Google Chrome che permette di
-proteggere l'accesso alla sessione del browser tramite una password
-configurata dall'utente.
-</p>
+<details>
+  <summary>Come mettere una password a Chrome?</summary>
+  <p>
+    Google Chrome non dispone di una password integrata dedicata
+    all'apertura della sessione del browser. Scudo Browser aggiunge
+    questa protezione tramite un'estensione.
+  </p>
+  <p>
+    Leggi la guida:
+    <a href="../password-chrome/">come mettere una password a Chrome</a>.
+  </p>
+</details>
 
-<h2>Come mettere una password a Chrome?</h2>
+<details>
+  <summary>Come bloccare Chrome con password?</summary>
+  <p>
+    Dopo aver configurato Scudo Browser, la password viene richiesta
+    quando viene avviata una nuova sessione protetta di Chrome.
+    Puoi anche utilizzare <strong>“Blocca adesso”</strong> per attivare
+    immediatamente la protezione.
+  </p>
+  <p>
+    Leggi la guida:
+    <a href="../bloccare-chrome/">come bloccare Chrome con password</a>.
+  </p>
+</details>
 
-<p>
-Google Chrome non dispone di una password integrata dedicata
-all'apertura della sessione del browser. Scudo Browser aggiunge
-questa protezione tramite un'estensione.
-</p>
+<details>
+  <summary>Chrome ha una password integrata per aprire il browser?</summary>
+  <p>
+    No. Chrome non offre una password separata specificamente destinata
+    a bloccare l'apertura della sessione del browser. Scudo Browser
+    aggiunge questa funzione tramite un'estensione.
+  </p>
+</details>
 
-<p>
-Per maggiori dettagli puoi leggere la guida
-<a href="../password-chrome/">come mettere una password a Chrome</a>.
-</p>
+<details>
+  <summary>La password viene richiesta per ogni nuova scheda?</summary>
+  <p>
+    No. Dopo aver sbloccato la sessione puoi aprire normalmente nuove
+    schede e finestre senza reinserire continuamente la password.
+  </p>
+</details>
 
-<h2>Come bloccare Chrome con password?</h2>
+<details>
+  <summary>Cosa succede quando chiudo completamente Chrome?</summary>
+  <p>
+    Quando Chrome viene chiuso completamente e successivamente riaperto,
+    Scudo Browser torna a proteggere l'accesso alla nuova sessione e
+    richiede nuovamente la password.
+  </p>
+</details>
 
-<p>
-Dopo aver configurato Scudo Browser, la password viene richiesta
-quando viene avviata una nuova sessione protetta di Chrome.
-È inoltre possibile utilizzare la funzione <strong>“Blocca adesso”</strong>
-per attivare immediatamente la protezione.
-</p>
+<details>
+  <summary>Posso bloccare Chrome senza chiuderlo?</summary>
+  <p>
+    Sì. La funzione <strong>“Blocca adesso”</strong> permette di attivare
+    immediatamente la schermata di protezione.
+  </p>
+</details>
 
-<p>
-Consulta anche la guida
-<a href="../bloccare-chrome/">come bloccare Chrome con password</a>.
-</p>
+<details>
+  <summary>La password viene inviata online?</summary>
+  <p>
+    No. La configurazione della password viene salvata localmente
+    sul dispositivo.
+  </p>
+</details>
 
-<h2>Chrome ha una password integrata per aprire il browser?</h2>
+<details>
+  <summary>Serve creare un account?</summary>
+  <p>
+    No. Scudo Browser funziona senza registrazione.
+  </p>
+</details>
 
-<p>
-No. Chrome non offre una password separata specificamente destinata
-a bloccare l'apertura della sessione del browser. Scudo Browser
-aggiunge questa funzione tramite un'estensione.
-</p>
+<details>
+  <summary>Scudo Browser protegge tutto il computer?</summary>
+  <p>
+    No. Scudo Browser protegge l'accesso alla sessione Chrome attraverso
+    l'estensione. Non sostituisce la password di Windows o le altre
+    funzioni di sicurezza del sistema operativo.
+  </p>
+</details>
 
-<h2>La password viene richiesta per ogni nuova scheda?</h2>
+<details>
+  <summary>Scudo Browser è gratuito?</summary>
+  <p>
+    Sì. Scudo Browser è gratuito. È possibile sostenere facoltativamente
+    il progetto con una donazione, senza sbloccare funzionalità aggiuntive.
+  </p>
+</details>
 
-<p>
-No. Dopo aver inserito correttamente la password e sbloccato la
-sessione, puoi aprire normalmente nuove schede e finestre senza
-reinserire continuamente la password.
-</p>
+<div class="install">
 
-<h2>Cosa succede quando chiudo completamente Chrome?</h2>
+  <h2>Installa Scudo Browser</h2>
 
-<p>
-Quando Chrome viene chiuso completamente e successivamente riaperto,
-Scudo Browser torna a proteggere l'accesso alla nuova sessione e
-richiede nuovamente la password.
-</p>
+  <p>Scudo Browser è disponibile gratuitamente sul Chrome Web Store.</p>
 
-<h2>Posso bloccare Chrome senza chiuderlo?</h2>
+  <a class="button"
+     href="https://chromewebstore.google.com/detail/fmoccjbdmhiimbebicdedimjepbjfnpf">
+    Apri Scudo Browser nel Chrome Web Store
+  </a>
 
-<p>
-Sì. La funzione <strong>“Blocca adesso”</strong> permette di attivare
-immediatamente la schermata di protezione.
-</p>
+  <p>
+    <a href="../">Torna alla pagina principale di Scudo Browser</a>
+  </p>
 
-<h2>La password viene inviata online?</h2>
-
-<p>
-No. La configurazione della password viene salvata localmente sul
-dispositivo.
-</p>
-
-<h2>Serve creare un account?</h2>
-
-<p>
-No. Scudo Browser funziona senza registrazione.
-</p>
-
-<h2>Scudo Browser protegge tutto il computer?</h2>
-
-<p>
-No. Scudo Browser protegge l'accesso alla sessione Chrome attraverso
-l'estensione. Non sostituisce la password di Windows o le altre
-funzioni di sicurezza del sistema operativo.
-</p>
-
-<h2>Scudo Browser è gratuito?</h2>
-
-<p>
-Sì. Scudo Browser è gratuito. È possibile sostenere facoltativamente
-il progetto con una donazione, senza sbloccare funzionalità aggiuntive.
-</p>
-
-<h2>Dove posso installare Scudo Browser?</h2>
-
-<p>
-Scudo Browser è disponibile sul Chrome Web Store.
-</p>
-
-<a class="button"
-   href="https://chromewebstore.google.com/detail/fmoccjbdmhiimbebicdedimjepbjfnpf">
-  Apri Scudo Browser nel Chrome Web Store
-</a>
-
-<p>
-<a href="../">Torna alla pagina principale di Scudo Browser</a>
-</p>
+</div>
 
 </main>
 
